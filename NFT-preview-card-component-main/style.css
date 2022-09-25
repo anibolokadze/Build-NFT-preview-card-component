@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+:root {
+    --bg-main: hsl(217, 54%, 11%);
+    --bg-card: hsl(216, 50%, 16%);
+    --colour-blue: hsl(215, 51%, 70%);
+    --colour-cyan: hsl(178, 100%, 50%);
+    --colour-white: hsl(0, 0%, 100%);
+    --line-colour: hsl(215, 32%, 27%);
+  }
+  
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  color: var(--colour-blue);
+  background-color: var(--bg-main);
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card-wrapper {
+  border-radius: 15px;
+  background-color:#15263F;
+  width: 350px;
+  height: 596px;
+  padding: 24px 24px 0 24px;
+}
+
+
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+
+.main-image {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.view {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.overlay {
+  position: absolute;
+  background-color: var(--colour-cyan);
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  left: 0;
+  right: 0;
+  border-radius: 10px;
+}
+
+
+h1 {
+  color: var(--colour-white);
+  padding-top: 24px;
+  padding-bottom: 16px;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.text-description {
+  font-size: 18px;
+  line-height: 26px;
+  width: 278px;
+  font-weight: 300;
+  padding-bottom: 24px;
+}
+
+.eth-info {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 24px;
+}
+
+.eth {
+  color: var(--colour-cyan);
+  font-weight: 600;
+}
+
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 0.5rem;
+}
+
+
+.user-info {
+  padding-top: 16px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--line-colour);
+  padding-bottom: 24px;
+}
+
+.user {
+  border: 1px solid var(--colour-white);
+  border-radius: 50%;
+  width: 33px;
+  height: 33px;
+  margin-right: 16px;
+}
+
+.creator-text {
+  font-weight: 300;
+}
+
+.creator-name {
+  color: var(--colour-white);
+}
+
+
+
+
+/* hover */
+
+.image-container:hover .overlay + .view {
+  display: block;
+}
+
+.image-container:hover .overlay {
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+
+h1:hover,
+.creator-name:hover {
+  color: var(--colour-cyan);
+  cursor: pointer;
+}
