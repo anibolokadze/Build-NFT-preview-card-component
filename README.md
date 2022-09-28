@@ -27,3 +27,6 @@ Desktop: 1440px
 - Flexbox
 - positions
 - Mobile-first workflow
+
+## What I learned
+I learned how to use position absolute and relative, and how to display an element on hover. 🚀
