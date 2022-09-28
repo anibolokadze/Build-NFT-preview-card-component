@@ -8,7 +8,6 @@
     --line-colour: hsl(215, 32%, 27%);
   }
   
-
 * {
   margin: 0;
   padding: 0;
@@ -29,25 +28,26 @@ body {
 .card-wrapper {
   border-radius: 15px;
   background-color:#15263F;
-  width: 350px;
-  height: 596px;
-  padding: 24px 24px 0 24px;
+  max-width: 327px;
+  height: 543px;
+  padding: 24px;
+  margin: 5px;
 }
 
 
+/* card img */
 .image-container {
   position: relative;
   width: 100%;
 }
-
-
-.main-image {
+.img-wrapper {
   display: block;
   width: 100%;
   border-radius: 10px;
 }
 
-.view {
+/* icon view */
+.view-wrapper {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -59,83 +59,91 @@ body {
   background-color: var(--colour-cyan);
   top: 0;
   bottom: 0;
+  left: 0;
+  right: 0;
   height: 100%;
   width: 100%;
   opacity: 0;
-  left: 0;
-  right: 0;
   border-radius: 10px;
 }
 
-
+/* text description */
 h1 {
   color: var(--colour-white);
   padding-top: 24px;
-  padding-bottom: 16px;
+  padding-bottom: 12px;
+  font-weight: 600;
   font-size: 22px;
-  font-weight: 400;
+  line-height: 28px;
 }
-
 .text-description {
   font-size: 18px;
   line-height: 26px;
-  width: 278px;
+  max-width: 278px;
   font-weight: 300;
-  padding-bottom: 24px;
+  padding-bottom: 16px;
 }
 
-.eth-info {
+/* eth clock details */
+.eth-clock-info {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 24px;
+  padding-bottom: 16px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 19px;
 }
 
 .eth {
   color: var(--colour-cyan);
-  font-weight: 600;
 }
 
-
-.info {
+.info-wrapper {
   display: flex;
   align-items: center;
 }
-
+.border{
+  border-bottom: 1px solid var(--line-colour);
+  max-width: 278px;
+}
 .icon {
   margin-right: 0.5rem;
 }
 
 
-.user-info {
+/* creator */
+.creator-info {
   padding-top: 16px;
   display: flex;
   align-items: center;
-  border-top: 1px solid var(--line-colour);
-  padding-bottom: 24px;
 }
 
-.user {
+.creator-info img {
   border: 1px solid var(--colour-white);
   border-radius: 50%;
   width: 33px;
   height: 33px;
   margin-right: 16px;
 }
-
+.creator-info p{
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+}
 .creator-text {
   font-weight: 300;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
 }
-
 .creator-name {
   color: var(--colour-white);
 }
 
 
 
-
 /* hover */
-
-.image-container:hover .overlay + .view {
+.image-container:hover .overlay + .view-wrapper {
   display: block;
 }
 
@@ -144,9 +152,29 @@ h1 {
   opacity: 0.3;
 }
 
-
 h1:hover,
 .creator-name:hover {
   color: var(--colour-cyan);
   cursor: pointer;
+}
+
+
+@media (min-width:1440px) {
+  .card-wrapper{
+    max-width: 350px;
+    height: 596px;
+  }
+  h1{
+    padding-bottom: 16px;
+  }
+  .text-description {
+    padding-bottom: 24px;
+  }
+  .eth-clock-info {
+    font-size: 16px;
+    padding-bottom: 24px;
+  }
+  .creator-info p{
+    font-size: 16px;
+  }
 }
