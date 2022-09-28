@@ -7,3 +7,8 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 ![mobile-design](https://user-images.githubusercontent.com/89190087/192880336-0cff1e6d-a1c4-4c21-a8f9-419603df73ff.jpg)
 
 ## The challenge
+
+Users should be able to:
+
+- View the optimal layout depending on their device's screen size
+- See hover states for interactive elements
