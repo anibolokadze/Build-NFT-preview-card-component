@@ -4,6 +4,8 @@ This is solution to <a href='https://www.frontendmentor.io/challenges/nft-previe
 
 Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
+Live Site URL: https://anibolokadze.github.io/Build-NFT-preview-card-component/
+
 ![mobile-design](https://user-images.githubusercontent.com/89190087/192880336-0cff1e6d-a1c4-4c21-a8f9-419603df73ff.jpg)
 
 ## The challenge
